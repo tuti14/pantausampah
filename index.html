@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PantauSampah - Beranda</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Niramit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <nav class="navbar fixed-top bg-white">
+
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a href="#" class="navbar-brand" id="navLogoHeader">
+                <img src="assets/img/bootstrap-logo.svg" width="32" height="28" alt="Logo">
+            </a>
+
+            <div class="d-flex align-items-center">
+                <!-- Notifikasi -->
+                <a href="#" id="navNotifikasi">
+                    <iconify-icon icon="material-symbols:notifications-active-outline" width="32" height="32"></iconify-icon>
+                </a>
+
+                <!-- Toggle Sidebar -->
+                <button class="navbar-toggler"
+                        id="navSidebar" 
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbarSidebar"
+                        aria-label="Toggle navigation">
+                    <iconify-icon icon="material-symbols:view-cozy-outline" width="32" height="32"></iconify-icon>
+                </button>
+
+                <!-- Sidebar -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarSidebar" aria-labelledby="offcanvasNavbarSidebarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarSidebarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Layanan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Daftar Akun</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Masuk</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Berita</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kontak Kami</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container-fluid pt-5">
+            <div class="row row-cols-1">
+                <div class="col">
+                    <h1>
+                        <span class="pantau">Pantau</span><span class="sampah">Sampah</span>
+                    </h1>
+                </div>
+                <div class="col">
+                     <h2>di daerahmu!</h2>
+                </div>
+                <div class="col" id="slogan">
+                    <div>
+                        <p>Pantau</p>
+                    </div>
+                    <div>
+                        <iconify-icon icon="material-symbols:circle" width="12" height="12"></iconify-icon>
+                    </div>
+                    <div>
+                        <p>Kelola</p>
+                    </div>
+                    <div>
+                        <iconify-icon icon="material-symbols:circle" width="12" height="12"></iconify-icon>
+                    </div>
+                    <div>
+                        <p>Jaga Bumi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jumlah Pengguna -->
+    <section class="jumlahPengguna">
+        <div class="container">
+            <div class="row row-cols-1">
+                <div class="col">
+                    <h5>Mari ikut jaga bumi dengan pantau & kelola sampah</h5>
+                    <h5>di daerahmu di 
+                        <span class="pantau">Pantau</span><span class="sampah">Sampah<span>
+                    </h5>
+                </div>
+                <div class="col">
+                    <div class="bergabung">
+                        <iconify-icon icon="material-symbols:supervised-user-circle" width="32" height="32"></iconify-icon>
+                        <p>0</p>
+                        <p>Bergabung</p>
+                    </div>
+                    <div class="berlangganan">
+                        <iconify-icon icon="material-symbols:supervised-user-circle" width="32" height="32"></iconify-icon>
+                        <p>0</p>
+                        <p>Berlangganan DLH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan -->
+    <section class="layanan">
+        <div class="container pt-5">
+            <h1>Layanan</h1>
+            <div class="row">
+                <div class="col">
+                    <p>Cek JadwaL Pengangkutan Sampah</p>
+                    <iconify-icon icon="material-symbols:calendar-month" width="24" height="24"></iconify-icon>
+                </div>
+                <div class="col">
+                    <p>Lapor Masalah Sampah</p>
+                    <iconify-icon icon="material-symbols:flag-2-rounded" width="24" height="24"></iconify-icon>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daftar Akun -->
+    <section class="daftarAkun">
+       <div class="container py-5">
+            <h1>Daftar Akun</h1>
+            <div class="row row-cols-1">
+                <div class="col">
+                    <a href="#" class="btn btn-daftar">Daftar</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="btn btn-masuk">Masuk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Berita -->
+    <section class="berita">
+        <div class="container py-5">
+            <h1>Berita</h1>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-lg-4">
+                          <img src="assets/img/test.jpg" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-lg-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <a href="#" class="btn btn-berita">Baca Selengkapnya</a>
+                          </div>
+                            <div class="card-footer bg-transparent">
+                                <p>
+                                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-lg-4">
+                          <img src="assets/img/test.jpg" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-lg-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <a href="#" class="btn btn-berita">Baca Selengkapnya</a>
+                          </div>
+                            <div class="card-footer bg-transparent">
+                                <p>
+                                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-lg-4">
+                          <img src="assets/img/test.jpg" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-lg-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <a href="#" class="btn btn-berita">Baca Selengkapnya</a>
+                          </div>
+                            <div class="card-footer bg-transparent">
+                                <p>
+                                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer"> 
+    <div class="container-fluid pt-5">
+        <div class="row"> 
+            <div class="col-md-5 mb-3">
+                <a href="#" class="navbar-brand" id="navLogoFooter">
+                    <img src="assets/img/bootstrap-logo.svg" width="32" height="28" alt="Logo">
+                </a>
+                <p>Di Bumi bagian Indonesia,</p>
+                <p>Jl. in aja dulu, Jakarta</p>
+            </div>
+
+            <div class="col-6 col-md-2 offset-md-3 mb-3"> 
+                <h5>Menu</h5> 
+                <ul class="nav flex-column"> 
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Beranda</a>
+                    </li> 
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Layanan</a>
+                    </li> 
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Daftar Akun</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Masuk</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Berita</a>
+                    </li>
+                 </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Kontak Kami</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">pantausampah@gmail.com</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">021-345-32</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Instagram</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Facebook</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2026 PantauSampah, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="link-body-emphasis" href="#" aria-label="Instagram">
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-body-emphasis" href="#" aria-label="Facebook">
+                        <svg class="bi" width="24" height="24" aria-hidden="true">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer> 
+
+<!-- Popper JS -->
+<script src="assets/js/popper.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Iconify JS -->
+<script src="assets/font/iconify-icon.min.js"></script>
+
+</body>
+</html>
