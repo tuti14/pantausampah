@@ -194,3 +194,10 @@ h1, h2, h3, h4, h5 {
     color: #2e7d32;
     border-bottom: 1px solid #2e7d32;
 }
+
+/* Layar berukuran 360px ke bawah */
+@media (max-width: 360px) {
+    .banner h1 {
+        font-size: 40px;
+    }
+}
