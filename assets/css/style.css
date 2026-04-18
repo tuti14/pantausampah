@@ -1,301 +1,191 @@
-/* 1. Mobile First - Default Styling (Ponsel kecil < 576px) */
-/* Reset */
-* {
-    font-family: "Niramit", sans-serif;
-}
-
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-
 body {
-  min-height: 75rem;
-  padding-top: 1rem;
+    font-family: 'Niramit', sans-serif;
+    background-color: #f9faf9;
+    color: #333;
 }
 
-a {
-    text-decoration: none;
+h1, h2, h3, h4, h5 {
+    color: #1b5e20;
 }
 
-p, h1, h2, h3 {
-    margin-bottom: 0;
+/* navbar */
+.navbar {
+    background-color: #ffffff;
 }
 
-.row {
-    margin: 0;
-}
-
-.bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+.navbar-brand {
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .pantau {
-    /* warna */
-    color: ; 
+    color: #2e7d32;
 }
 
 .sampah {
-    /* warna */
-    color: ;
+    color: #66bb6a;
 }
 
-/* Navbar */
-#navLogoHeader,
-#navNotifikasi,
-#navSidebar {
-    padding-top: 0.25rem; 
-    padding-right: 0.75rem; 
-    padding-bottom: 0.25rem; 
-    padding-left: 0.75rem;
+.nav-link {
+    color: #555;
+    margin-left: 10px;
+    transition: 0.2s;
 }
 
-#navNotifikasi {
-    line-height: 0;
-    color: rgba(0,0,0,0.65);
+.nav-link:hover {
+    color: #2e7d32;
 }
 
-#navSidebar {
-    border: 0;
-}
-
-/* Banner */
+/* banner */
 .banner {
-    padding-top: 0.25rem; 
-    padding-right: 0.75rem; 
-    padding-bottom: 10rem; 
-    padding-left: 0.75rem;
-    /* warna */
-    /*background-color: ;*/
+    padding: 80px 0;
+    background: linear-gradient(#ffffff, #f3f5f3) shadow(0 4px 20px rgba(0,0,0,0.1));
 }
 
-.banner .row .col:nth-child(2) {
-    margin-bottom: 0.75rem;
+/* judul */
+.banner h1 {
+    font-size: 48px;
+    font-weight: 700;
 }
 
-.banner #slogan {
+.banner h2 {
+    font-size: 32px;
+    color: #555;
+}
+
+/* slogan */
+.slogan {
+    display: flex;
+    align-items: center;
     gap: 10px;
-    display: flex;
-    align-items: center;
-    /* warna */
-    color: ;
+    margin-top: 10px;
+    color: #2e7d32;
 }
 
-/*  Jumlah Pengguna */
-.jumlahPengguna .container {
-    gap: 25px;
-    margin-top: -5rem;
-    padding: 1.5rem 0;
-    border-radius: 10px;
-    /* warna */
-    background-color: ;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+.dot {
+    width: 6px;
+    height: 6px;
+    background: #2e7d32;
+    border-radius: 50%;
 }
 
-.jumlahPengguna .row {
-    gap: 25px;
-    text-align: center;
+/* card hijau */
+.banner-card {
+    margin-top: 40px;
+    background: #a5d6a7;
+    padding: 30px;
+    border-radius: 20px;
 }
 
-.jumlahPengguna .row .col iconify-icon {
-    /* warna */
-    color: ;
+/* statistik */
+.stat-box iconify-icon {
+    background: #2e7d32;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 5px;
 }
 
-.jumlahPengguna .row .col:nth-child(2) {
-    gap: 50px;
-    display: flex;
-    flex:0 0 auto;
-    justify-content: center;
+.stat-box h5 {
+    margin: 5px 0;
+    font-weight: 700;
 }
 
-.jumlahPengguna .row .col:nth-child(2) .bergabung,
-.jumlahPengguna .row .col:nth-child(2) .berlangganan {
-    width: 50%;
+/* layanan */
+.layanan-card {
+    border-radius: 20px;
+    transition: 0.3s;
+    border: none;
 }
 
-/* Layanan */
-.layanan {
-    padding-top: 0.25rem; 
-    padding-right: 0.75rem; 
-    padding-bottom: 0.25rem; 
-    padding-left: 0.75rem;
+.layanan-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
-.layanan h1 {
-    margin-bottom: 0.75rem;
+.layanan-card iconify-icon {
+    color: #2e7d32;
 }
 
-.layanan .row {
-    gap: 20px;
-}
-
-.layanan .row .col {
-    display: flex;
-    flex: 0 0 auto;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 10px;
-    padding: 1.5rem;
-    /* warna */
-    background-color: ;
-}
-
-.layanan .row .col iconify-icon {
-    /* warna */
-    color: ;
-}
-
-/* Daftar Akun */
-.daftarAkun {
-    padding-top: 0.25rem; 
-    padding-right: 0.75rem; 
-    padding-bottom: 0.25rem; 
-    padding-left: 0.75rem;
-}
-
-.daftarAkun h1 {
-    margin-bottom: 0.75rem;
-}
-
-.daftarAkun .row {
-    gap: 20px;
-    text-align: center;
-}
-
-.daftarAkun .btn {
-    width: 50%;
-}
-
-.daftarAkun .btn-daftar {
-    color: #43A047;
-    border: 3px solid #43A047;
-}
-
-.daftarAkun .btn-masuk {
-    color: #FFFFFF;
-    background-color: #43A047;
-}
-
-.daftarAkun .btn-daftar:hover {
-    color: #FFFFFF;
-    background-color: #43A047;
-}
-
-.daftarAkun .btn-masuk:hover {
-    background-color: #1B5E20;
-}
-
-/* Berita */
-.berita {
-    padding-top: 0.25rem; 
-    padding-right: 0.75rem; 
-    padding-bottom: 0.25rem; 
-    padding-left: 0.75rem;
-    /* warna */
-    background-color: ;
-}
-
-.berita h1 {
-    margin-bottom: 0.75rem;
-}
-
-.berita .card {
-    border: 0;
-    margin-bottom: 0.75rem;
-}
-
-.berita .card img {
+/* DaftarAkun */
+.cta-dlh {
+    max-width: 900px;
     width: 100%;
-    height: 250px;
+    background: linear-gradient(135deg, #f1f8f4, #ffffff);
+    border-radius: 24px;
+}
+
+.img-dlh {
+    max-width: 220px;
+}
+
+.fitur-highlight {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.fitur-highlight span {
+    background: #e8f5e9;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #2e7d32;
+}
+
+/* berita */
+.berita-card {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    border: none;
+}
+
+.berita-card img {
+    height: 180px;
     object-fit: cover;
-    border-top-left-radius: 0.375rem;
-    border-top-right-radius: 0.375rem;
 }
 
-.berita .card .card-text {
-    margin-bottom: 0.75rem;
+.berita-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
 }
 
-.berita .card .btn-berita {
-    color: #43A047;
-    border: 3px solid #43A047;
+.berita .btn {
+    border-radius: 20px;
+    padding: 4px 12px;
 }
 
-.berita .btn-berita:hover {
-    color: #FFFFFF;
-    background-color: #43A047;
+/* footer */
+.footer {
+    background-color: #f1f8f4;
 }
 
-.berita .card .card-footer p {
-    text-align: right;
+/* biar nggak melebar banget */
+.footer .row {
+    max-width: 1000px;
+    margin: auto;
 }
 
-/* Footer */
-#navLogoHeader {
-    padding-top: 0.25rem; 
-    padding-right: 0.75rem; 
-    padding-bottom: 0.25rem; 
-    padding-left: 0;
+/* menu */
+.footer .nav-link {
+    color: #555;
+    transition: 0.2s;
 }
 
-
-
-
-/* 2. Tablet (Layar berukuran 576px ke atas) */
-@media (min-width: 576px) {
-    body {
-        /*font-size: 16px;*/
-    }
-
-    /* Layanan */
-    .layanan .row {
-        gap: 20px;
-    }
+.footer .nav-link:hover {
+    color: #2e7d32;
 }
 
-/* 3. Tablet Besar / Laptop Kecil (Layar berukuran 768px ke atas) */
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
-
-    .container {
-        /*width: 750px;*/
-    }
-
-    /* Layanan */
-    .layanan .row {
-        justify-content: space-between;
-    }
-
-    .layanan .row .col {
-        width: 40%;
-    }
+/* kontak link */
+.kontak-list a {
+    color: #555;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.2s;
 }
 
-/* 4. Laptop / Desktop (Layar berukuran 992px ke atas) */
-@media (min-width: 992px) {
-    .container {
-        /*width: 970px;*/
-    }
-
-    .berita .card img {
-        border-top-left-radius: 0.375rem;
-        border-bottom-left-radius: 0.375rem;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-}
-
-/* 5. Desktop Besar (Layar berukuran 1200px ke atas) */
-@media (min-width: 1200px) {
-    .container {
-        /*width: 1170px;*/
-    }
+.kontak-list a:hover {
+    color: #2e7d32;
+    border-bottom: 1px solid #2e7d32;
 }
